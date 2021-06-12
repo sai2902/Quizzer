@@ -1,0 +1,74 @@
+:root {
+  background: rgba(0, 26, 255, 0.658);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 62.5%;
+}
+*{
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+.container{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display:contents;
+}
+#h1{
+  position: absolute;
+  top: 0rem;
+  font-size: 3rem;
+  color: rgba(0, 26, 255, 0.726);
+  background: url('https://think-asia.org/themes/Mirage2///images/carousel/global-ideas.jpg');
+  background-position:left;
+  padding: 10% 26.5rem;  
+  background-size: 800px 500px;
+  text-transform: uppercase;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#h2{
+  position: absolute;
+  top: 29rem;
+  left: 2rem;
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+}
+#introPara{
+  position: absolute;
+  left: 2rem;
+  top: 35rem;
+  font-size: 1.75rem;
+  color: rgb(0, 0, 0);
+}
+.btn{
+  position: relative;
+  font-size: 3rem;
+}
+#btn1{
+  position: absolute;
+  top: 36rem;
+  left: 52rem;
+  padding: 6px;
+}
+#btn2{
+  position: absolute;
+  top: 46rem;
+  left: 52rem;
+  padding: 6px;
+}
+a{
+  position: relative;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding: 1rem 2rem;
+  background-color: rgba(0, 47, 255, 0.582);
+}
+
+/* @media (min-width:960px) and (max-width:1920px){
+  #h1{
+  
+  }
+} */
