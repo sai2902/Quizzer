@@ -4,42 +4,43 @@
   font-size: 62.5%;
 }
 *{
-  box-sizing: border-box;
   padding: 0%;
   margin: 0%;
 }
 .container{
-  position: relative;
+  position: absolute;
   width: 100vw;
   height: 100vh;
   justify-content: center;
   align-items: center;
-  display:contents;
 }
 #h1{
-  position: absolute;
+  position: relative;
   top: 0rem;
   font-size: 3rem;
+  text-align: center;
   color: rgba(0, 26, 255, 0.726);
   background: url('https://think-asia.org/themes/Mirage2///images/carousel/global-ideas.jpg');
-  background-position:left;
-  padding: 10% 26.5rem;  
-  background-size: 800px 500px;
+  background-color: #cccccc;
+  background-position: center;
+  background-size: 100%;
+  padding: 15rem;
+  max-width: 100%;
   text-transform: uppercase;
   background-repeat: no-repeat;
-  background-size: cover;
+
 }
 #h2{
-  position: absolute;
-  top: 29rem;
+  position: relative;
+  top: 2rem;
   left: 2rem;
   font-size: 1.5rem;
   color: rgb(0, 0, 0);
 }
 #introPara{
-  position: absolute;
+  position: relative;
   left: 2rem;
-  top: 35rem;
+  top: 4rem;
   font-size: 1.75rem;
   color: rgb(0, 0, 0);
 }
