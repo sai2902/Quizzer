@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>choose quiz type</title>
+</head>
+<body>
+  <h1>Choose your quiz</h1>
+
+  <!-- buttons -->
+  <button type="button" class="btn btn-primary">Sports</button>
+
+
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+   <script>
+      var checkbox1 = document.querySelector(".btn btn-primary");
+
+      checkbox1.addEventListener('click', function () {
+        if (this.checked) {
+          console.log('chosen sports')
+        } else {
+          console.log('ghanta')
+        }
+      });
+  </script>
+</body>
+</html>
