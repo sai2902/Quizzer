@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Home page</title>
+
+  <style>
+    .left {
+      position: absolute;
+      left: 50px;
+      top: 20px;
+      display: inline-block;
+      /* border: 2px solid red; */
+
+    }
+
+    .mid {
+      display: block;
+      width: 40%;
+      margin: 20px auto;
+      /* border: 2px solid blue; */
+      padding: 0px;
+      background-color: burlywood;
+      text-align: center;
+      font-size: 25px;
+      border: 1px solid blanchedalmond;
+      border-radius: 20px;
+
+    }
+
+    .right {
+      position: absolute;
+      right: 50px;
+      top: 20px;
+      display: inline-block;
+      /* border: 2px solid chartreuse; */
+      padding: 0px;
+    }
+
+    .navbar {
+      display: inline-block;
+    }
+
+    .navbar li {
+      display: inline-block;
+      font-size: 20px;
+    }
+
+    .navbar li a {
+      color: black;
+      text-decoration: none;
+      /* text ki underline ko hatane ke liye */
+      padding: 15px 10px;
+      /* (padding: 15px, 10px) is tarah se padding me koma nhi lagate and px ko no ke just chipkake likhte h warna 10 px 100 px ki tarah work karega  */
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+      color: #e70404;
+      text-decoration: underline;
+      padding: 15px 10px;
+    }
+
+    .left img {
+      width: 100px;
+      /* filter: invert(100%); */
+      /* invert function se hum apni image ka color puri tarah change kar dkate h */
+    }
+
+    .left div {
+      font-family: 'Lobster', cursive;
+      text-align: center;
+    }
+
+    .btn {
+      color: rgb(218, 21, 21);
+      background-color: #dcd591;
+      font-size: 15px;
+      margin: 7px 4px;
+      border-radius: 10px;
+      padding: 3px 5px;
+    }
+
+    body {
+      background-color: rgb(58, 162, 189);
+      /* background-image: url('https://t3.ftcdn.net/jpg/03/23/12/42/360_F_323124237_SfGqpttZqU2mrMm61VPSWA2tKvc95l9O.jpg'); */
+    }
+
+    h1 {
+      text-align: center;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 50px;
+    }
+
+    .middle {
+      background-color: burlywood;
+      text-align: center;
+      font-size: 25px;
+      border: 1px solid blanchedalmond;
+      border-radius: 20px;
+    }
+
+    .left img {
+      position: absolute;
+      width: 200px;
+      margin: 0px 0px;
+    }
+
+    .card1 {
+      /* Add shadows to create the "card" effect */
+      position: absolute;
+      margin: 50px 50px;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      transition: 0.3s;
+      width: 300px;
+      background-color: rgb(207, 207, 183);
+      display: inline-block;
+    }
+
+    .card1 {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      transition: 0.3s;
+      border-radius: 5px;
+      /* 5px rounded corners */
+    }
+
+    /* Add rounded corners to the top left and the top right corner of the image */
+    .card1 img {
+      border-radius: 5px 5px 0 0;
+    }
+
+
+    /* On mouse-over, add a deeper shadow */
+    .card1:hover {
+      box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    /* Add some padding inside the card container */
+    .container1 {
+      padding: 2px 16px;
+      text-align: center;
+    }
+
+    .container1 a {
+      color: black;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .card2 {
+      /* Add shadows to create the "card" effect */
+      position: absolute;
+      margin: 50px 450px;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      transition: 0.3s;
+      width: 300px;
+      background-color: rgb(207, 207, 183);
+      display: inline-block;
+    }
+
+    .card2 {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      transition: 0.3s;
+      border-radius: 5px;
+      /* 5px rounded corners */
+    }
+
+    /* Add rounded corners to the top left and the top right corner of the image */
+    .card2 img {
+      border-radius: 5px 5px 0 0;
+    }
+
+
+    /* On mouse-over, add a deeper shadow */
+    .card2:hover {
+      box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    /* Add some padding inside the card container */
+    .container2 {
+      padding: 2px 16px;
+      text-align: center;
+    }
+
+    .container2 a {
+      color: black;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .card3 {
+      /* Add shadows to create the "card" effect */
+      position: absolute;
+      margin: 50px 850px;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      transition: 0.3s;
+      width: 300px;
+      background-color: rgb(207, 207, 183);
+      display: inline-block;
+    }
+
+    .card3 {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      transition: 0.3s;
+      border-radius: 5px;
+      /* 5px rounded corners */
+    }
+
+    /* Add rounded corners to the top left and the top right corner of the image */
+    .card3 img {
+      border-radius: 5px 5px 0 0;
+    }
+
+
+    /* On mouse-over, add a deeper shadow */
+    .card3:hover {
+      box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    /* Add some padding inside the card container */
+    .container3 {
+      padding: 2px 16px;
+      text-align: center;
+    }
+
+    .container3 a {
+      color: black;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .btnbtn1 {
+      color: rgb(218, 21, 21);
+      background-color: #dcd591;
+      font-size: 20px;
+      margin: 400px 0px;
+      border-radius: 10px;
+      padding: 5px 10px;
+
+    }
+
+    .btnbtn2 {
+      color: rgb(218, 21, 21);
+      background-color: #dcd591;
+      font-size: 20px;
+      margin: 400px 25px;
+      border-radius: 10px;
+      padding: 5px 10px;
+
+    }
+
+    .news {
+      background-color: rgb(14, 231, 104);
+      text-align: center;
+      font-size: 25px;
+      border: 1px solid blanchedalmond;
+      border-radius: 20px;
+    }
+
+    .blink {
+      animation: blink 1s infinite;
+      font-size: 25px;
+      font-weight: bold;
+      background-color: burlywood;
+      border: 2px dotted burlywood;
+      border-radius: 10px;
+    }
+
+    @keyframes blink {
+      0% {
+        opacity: 1;
+      }
+
+      100% {
+        color: rgb(231, 14, 14);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <!-- left box for logo -->
+    <div class="left">
+      <img
+        src="https://images.vexels.com/media/users/3/216752/raw/8dceeae53eb82c21e14d1d3b2d5fbdc2-study-group-logo-design.jpg"
+        alt="">
+
+    </div>
+    <div class="mid">
+      <ul class="navbar">
+        <li><a href="#" class="active">Home</a></li>
+        <!-- yha active likhne se matlab h ki is wale eklement pe jab koi point kare ya hover kare to alag dikhe ye  -->
+        <li><a href="#">About us</a></li>
+      </ul>
+    </div>
+    <div class="right">
+      <button class="btn">Call us</li>
+      </button>
+      <button class="btn">Email us</button>
+    </div>
+  </header>
+
+  <h1>Quizzer</h1>
+
+  <!-- <div class="left">
+  <img src="https://images.vexels.com/media/users/3/216752/raw/8dceeae53eb82c21e14d1d3b2d5fbdc2-study-group-logo-design.jpg" alt="">
+</div> -->
+
+  <div class="middle">
+    <p>Welcome to our quiz page, here you can create or attempt quizzes as per your convenience.
+      <br>
+      There are some current popular quizzes uploaded for you.
+    </p>
+  </div>
+
+  <!-- <div class="card" style="width: 18rem;">
+        <img src="https://media.istockphoto.com/photos/sports-equipment-on-floor-picture-id1136317339?b=1&k=6&m=1136317339&s=170667a&w=0&h=1nAlhn4oKYdlfQZcqiH-HjHabeVfiIQuR0yNwPa-RUE=" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Sports</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div> -->
+  <h1>Popular Quizzes</h1>
+  <div class="card1">
+    <img src="https://www.gettyimages.in/gi-resources/images/HomepageCurationTilesUK/2021_2_FEBRUARY/SPORT_x9.jpg"
+      style="width:100%">
+    <div class="container1">
+      <a href="Easy.html">Sports</a>
+      <!-- <button class="btn">Sports</button> -->
+    </div>
+  </div>
+
+  <div class="card2">
+    <img
+      src="https://img.freepik.com/free-vector/hand-drawn-science-education-background_23-2148499325.jpg?size=626&ext=jpg"
+      style="width:100%">
+    <div class="container2">
+      <a href="https://www.britannica.com/quiz/science-quiz">Science</a>
+    </div>
+  </div>
+
+  <div class="card3">
+    <img
+      src="https://images.news18.com/ibnkhabar/uploads/2021/02/gk.jpeg"
+      style="width:100%">
+    <div class="container2">
+      <a href="https://www.tutorialspoint.com/general_knowledge/general_knowledge_online_quiz.htm">G.K.</a>
+    </div>
+  </div>
+
+  <div>
+    <button onclick="window.location.href='second.html';" class="btnbtn1">Attempt Quiz </button>
+    <button onclick="window.location.href='https://www.google.com';" class="btnbtn2">Create Quiz </button>
+  </div>
+
+  <p><span class="blink">Daily News</span>
+  </p>
+  <div class="news">
+    <marquee behavior="scroll" direction="left">
+      Indian Men's cricket team have not won a single ICC tournament since 2013 Champions Trophy.
+    </marquee>
+  </div>
+</body>
+
+</html>
