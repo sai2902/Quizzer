@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>indexChoose2</title>
+</head>
+
+<body>
+  <h1>Choose your Quiz type</h1><br>
+  <p>You can choose the quiz you want to attempt with the help of the following criteria</p><br>
+
+  <form>
+    <p>Category</p>
+    <input type="radio" name="choice1" value="Sports">Sports</input>
+    <input type="radio" name="choice1" value="Politics">Politics</input><br>
+
+
+    <p>Difficulty</p>
+    <input type="radio" name="choice2" value="Easy">Easy</input>
+    <input type="radio" name="choice2" value="Intermediate">Intermediate</input><br>
+
+
+    <p>Number of questions</p>
+    <input type="radio" name="choice3" value="2">2</input>
+    <input type="radio" name="choice3" value="1">1</input><br><br>
+
+    <input type="button" id="btn" value="Show Selected Value"><br>
+
+
+  </form>
+  <p id="add1"></p>
+  <p id="add2"></p>
+  <script>
+    // const btn1 =document.querySelector('#btn1');
+    // btn.onclick = function(){
+    //   const x = document.querySelectorAll('input[name="choice1"]');
+    //   let selectedValue;
+    //   for(const i of x){
+    //     if (i.checked){
+    //       selectedValue = i.value;
+    //       break; 
+    //     }
+    //   }
+    //   console.log(selectedValue);
+
+    // };
+    // const btn2 =document.querySelector('#btn2');
+    // btn2.onclick = function(){
+    //   const y = document.querySelectorAll('input[name="choice2"]');
+    //   let selectedValue2;
+    //   for(const i of y){
+    //     if (i.checked){
+    //       selectedValue2 = i.value;
+    //       console.log(selectedValue2);
+    //       continue;
+    //     }
+    //     else{
+    //       console.log('not selected')
+    //       break;
+    //     }
+    //   }
+
+
+    // };
+    const btn1 = document.querySelector('#btn');
+    btn1.onclick = function () {
+      const x = document.querySelectorAll('input[name="choice1"]');
+      const y = document.querySelectorAll('input[name="choice2"]');
+      const z = document.querySelectorAll('input[name="choice3"]');
+      let selectedValue;
+      const array1 = [x, y, z];
+      for (const i of array1) {
+        for (const j of i) {
+          if (j.checked) {
+            selectedValue = j.value;
+            console.log(selectedValue);
+            break;
+          }
+        }
+      }
+    };
+  </script>
+  <script src="json2.js"></script>
+</body>
+
+</html>
